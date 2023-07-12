@@ -1,0 +1,16 @@
+{
+  "name": "Dahab Wallet",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Dahab Wallet",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "jewel.png"
+    }
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ]
+}

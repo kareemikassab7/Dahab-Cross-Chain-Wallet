@@ -1,0 +1,104 @@
+{
+  "name": "wallet-extension",
+  "version": "0.1.0",
+  "private": true,
+  "manifest_version": 2,
+  "dependencies": {
+    "@certusone/wormhole-sdk": "^0.9.4",
+    "@ethereumnetwork/matic-bridge": "0.0.10",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@maticnetwork/maticjs": "^3.5.0",
+    "@maticnetwork/maticjs-web3": "^1.0.2",
+    "@reduxjs/toolkit": "^1.9.2",
+    "@solana/buffer-layout": "^4.0.0",
+    "@solana/web3.js": "^1.66.2",
+    "@terra-money/wallet-provider": "^4.0.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@zondax/ledger-casper": "^2.5.3",
+    "argon2": "^0.30.2",
+    "assert": "^2.0.0",
+    "axios": "^1.2.0",
+    "bip39": "^3.1.0",
+    "bootstrap": "^5.2.2",
+    "buffer": "^6.0.3",
+    "bytebuffer": "^5.0.1",
+    "casper-js-sdk": "^2.11.1",
+    "casper-storage": "^1.2.0",
+    "crypto-browserify": "^3.12.0",
+    "crypto-js": "^4.1.1",
+    "ethers": "^5.7.1",
+    "file-saver": "^2.0.5",
+    "fs": "^0.0.1-security",
+    "jks-js": "^1.1.0",
+    "jszip-utils": "^0.1.0",
+    "mdb-react-ui-kit": "^4.2.0",
+    "patch-package": "^6.5.1",
+    "pbkdf2": "^3.1.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0",
+    "react-loader-spinner": "^5.3.4",
+    "react-native-gradient-buttons": "^2.0.2",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "5.0.1",
+    "twofish": "^1.0.1",
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.19"
+  },
+  "browser": {
+    "crypto": false,
+    "argon2": false,
+    "fs": false
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "INLINE_RUNTIME_CHUNK=false react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "move": "yarn build && rd /s /q ../static && move build/static ../static"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.2",
+    "babel-preset-env": "^1.7.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.1",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "style-loader": "^3.3.2",
+    "ts-loader": "^9.4.2",
+    "url": "^0.11.0",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2"
+  }
+}
